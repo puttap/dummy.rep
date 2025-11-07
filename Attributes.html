@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes</title>
+    <style>
+        [type]{
+            width: 99%;
+            margin: 2px;
+        }
+        [type="submit"]{
+            width:100%;
+
+        }
+        [placeholder^='E']{
+            border-radius: 5px;
+            padding:5px;
+        }
+       [value$='n']{
+        background-color: cadetblue;
+        border: none;
+        cursor: pointer;
+       }
+       [type*='i']{
+        width:300px;
+        border-radius: 5px;
+        position: relative;
+        left:300px;
+         }
+
+    </style>
+</head>
+<body>
+   <form>
+    <input type="text" name="username" placeholder="Enter your name">
+    <input type="password" name="psw" placeholder="Enter your password">
+    <input type="submit" value="LogIn">
+   </form>
+</body>
+</html>

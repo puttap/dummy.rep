@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <style>
+        section,div{
+            border: 1px solid;
+            padding:10px;
+            margin:10px;
+        }
+        section{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+        }
+        
+        
+        @media only screen and (min-width:360px) and (max-width:560px){
+            section{
+                grid-template-columns: repeat(1,1fr); 
+            }
+           
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="small">Small</div>
+        <div class="medium">Medium</div>
+        <div class="large">Large</div>
+        <div class="Extralarge">ExtraLarge</div>
+    </section>
+</body>
+</html>
